@@ -1,0 +1,149 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://t3.ftcdn.net/jpg/05/60/26/26/360_F_560262652_SMg7tie3Zii0zFT9LYkKMqrNrPcU5owB.jpg'); /* Replace with your desired background image URL */
+    background-size: cover;
+    background-position: center;
+    animation: fadeIn 2s ease-in-out;
+    overflow: hidden;
+}
+
+.background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.card {
+    background-color: rgba(238, 241, 214, 0); /* Semi-transparent background for card */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    transform: scale(0.95);
+    animation: slideUp 1s ease-out forwards;
+}
+
+.card h1 {
+    font-size: 36px;
+    color: #ee4c1b;
+    margin-bottom: 20px;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+.card p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #f7f4f4;
+    margin-bottom: 30px;
+    animation: fadeInUp 2s ease-out;
+}
+
+button {
+    padding: 15px;
+    font-weight: bold;
+    background-color: #007bff91;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 200px;
+    transition: background-color 0.3s ease;
+    animation: fadeInUp 2.5s ease-out;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:active {
+    background-color: #004080;
+}
+
+a {
+    display: block;
+    margin-top: 20px;
+    text-decoration: none;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 200px;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: #218838;
+}
+
+a:active {
+    background-color: #1e7e34;
+}
+
+/* Animations */
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    .card {
+        width: 90%;
+        padding: 25px;
+    }
+
+    .card h1 {
+        font-size: 28px;
+    }
+
+    button {
+        font-size: 16px;
+    }
+
+    a {
+        font-size: 14px;
+    }
+}

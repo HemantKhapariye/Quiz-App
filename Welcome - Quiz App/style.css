@@ -1,0 +1,263 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://t3.ftcdn.net/jpg/05/60/26/26/360_F_560262652_SMg7tie3Zii0zFT9LYkKMqrNrPcU5owB.jpg'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    animation: fadeIn 2s ease-in-out;
+    overflow: hidden;
+}
+
+.background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0); /* Semi-transparent card */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    transform: scale(0.95);
+    animation: slideUp 1s ease-out forwards;
+}
+
+/* Heading styles */
+.card h1 {
+    font-size: 36px;
+    color: #c7221f;
+    margin-bottom: 20px;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+/* Question styles */
+.card p {
+    font-size: 18px;
+    color: #fefbfb;
+    font-weight: bold;
+    margin-bottom: 30px;
+    animation: fadeInUp 2s ease-out;
+}
+
+/* Option button styles */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+button, .option-btn {
+    padding: 15px;
+    background-color: #075753;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 200px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, .option-btn:hover {
+    background-color: #0056b3;
+}
+
+button:active, .option-btn:active {
+    background-color: #de0ebf;
+}
+
+/* Answer highlighting */
+button.correct {
+    background-color: #28a745;  /* Green for correct answer */
+}
+
+button.incorrect {
+    background-color: #dc3545;  /* Red for incorrect answer */
+}
+
+button.disabled {
+    background-color: #ddd;  /* Disabled button style */
+}
+
+/* Link to go back to welcome page */
+a {
+    display: block;
+    margin-top: 20px;
+    text-decoration: none;
+    padding: 10px;
+    background-color: #28a74643;
+    color: white;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 200px;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: #218838;
+}
+
+a:active {
+    background-color: #1e7e34;
+}
+
+/* Animations */
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    .card {
+        width: 90%;
+        padding: 25px;
+    }
+
+    .card h1 {
+        font-size: 28px;
+    }
+
+    button {
+        font-size: 16px;
+    }
+
+    a {
+        font-size: 14px;
+    }
+}
+/* Option button styles */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+button, .option-btn {
+    padding: 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 200px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, .option-btn:hover {
+    background-color: #0056b3;
+}
+
+button:active, .option-btn:active {
+    background-color: #004080;
+}
+
+/* Answer highlighting */
+button.correct {
+    background-color: #28a745;  /* Green for correct answer */
+}
+
+button.incorrect {
+    background-color: #dc3545;  /* Red for incorrect answer */
+}
+
+button.disabled {
+    background-color: #ddd;  /* Disabled button style */
+}
+
+button.next {
+    margin-top: 20px;
+    background-color: #b6f008;
+}
+
+/* Link to go back to welcome page */
+a {
+    display: block;
+    margin-top: 20px;
+    text-decoration: none;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 200px;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: #218838;
+}
+
+a:active {
+    background-color: #1e7e34;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    .card {
+        width: 90%;
+        padding: 25px;
+    }
+
+    .card h1 {
+        font-size: 28px;
+    }
+
+    button {
+        font-size: 16px;
+    }
+
+    a {
+        font-size: 14px;
+    }
+}

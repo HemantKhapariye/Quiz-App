@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Image and Centering Container -->
+    <div class="background">
+        <!-- Card Container for Quiz -->
+        <div class="card">
+            <h1>Quiz Time!</h1>
+            
+            <!-- Question and Options -->
+            <div id="quiz-container">
+                <p id="question">Loading question...</p>
+
+                <ul id="options-list">
+                    <!-- Options will be dynamically added here -->
+                </ul>
+            </div>
+
+            <!-- Next Button for Navigating to the Next Question -->
+            <button id="next" class="btn" style="display:none; background-color: gold;" onclick="nextQuestion()">Next Question</button>
+
+            <!-- Final Score and Thank You Message -->
+            <div id="final-score" style="display:none;">
+                <p>Your final score is: <span id="score"></span></p>
+                <button id="quiz-again" class="btn" onclick="restartQuiz()">Quiz Again</button>
+            </div>
+
+            <!-- Back to Welcome Page -->
+            
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
